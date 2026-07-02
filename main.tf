@@ -9,13 +9,13 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "7f1c734d-bd3a-4224-84a5-fea5837caa5d"
+  subscription_id = "28675585-9c0c-4857-9cb3-bacf35dfe8fc"
 }
 
 terraform {
   backend "azurerm" {
     resource_group_name  = "jenkins-130526-1"
-    storage_account_name = "jenkinsstate130526"
+    storage_account_name = "jenkinsstatemcg123"
     container_name       = "terraform-state"
     key                  = "terraform.tfstate"
   }
