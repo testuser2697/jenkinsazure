@@ -14,7 +14,7 @@ provider "azurerm" {
 
 terraform {
   backend "azurerm" {
-    resource_group_name  = "jenkins-130526-1"
+    resource_group_name  = "RG1"
     storage_account_name = "jenkinsstatemcg123"
     container_name       = "terraform-state"
     key                  = "terraform.tfstate"
