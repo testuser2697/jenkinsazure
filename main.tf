@@ -22,6 +22,6 @@ terraform {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "rg-245928-test-2"
+  name     = "rg-245928-test-3"
   location = "westeurope"
 }
