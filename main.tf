@@ -9,19 +9,19 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "28675585-9c0c-4857-9cb3-bacf35dfe8fc"
+  subscription_id = "163d9cbc-483f-476a-b0aa-fdf68db176ca"
 }
 
 terraform {
   backend "azurerm" {
-    resource_group_name  = "RG1"
-    storage_account_name = "jenkinsstatemcg123"
+    resource_group_name  = "jenkins-sa-245928"
+    storage_account_name = "jenkinsstate245928"
     container_name       = "terraform-state"
     key                  = "terraform.tfstate"
   }
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "RG-060726-1-test-2"
+  name     = "RG-demo-1"
   location = "westeurope"
 }
